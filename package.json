@@ -4,7 +4,7 @@
   "description": "Notebook Borrow-Return Management System with Barcode/QR Scanner, Admin Analytics, and Sticker Generator",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm --prefix client install && npm --prefix client run build && node server/seed.js",
+    "build": "npm --prefix client install --include=optional && npm --prefix client run build && node server/seed.js",
     "server": "node server/index.js",
     "seed": "node server/seed.js",
     "client": "npm --prefix client run dev",
